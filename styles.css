@@ -1,0 +1,615 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin:wght@400;500;600;700&family=Concert+One&family=Gwendolyn:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins";
+   
+   
+    /* background-color: pink; */
+}
+body{
+    background-color: #001219;
+}
+
+/* header */
+header{
+    height: 100vh;
+    background-color: #001219;
+    color: #fff;
+    position: relative;
+    
+}
+
+header .nav-items{
+    height: 12vh; 
+    position: absolute;
+    top:0;
+    left:0;
+     display: flex;
+    width: 100%;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    z-index: 100;
+    /* background-color: #e4ae50; */
+}
+header .nav-items .hamburger{
+    background-color: #e4ae50;
+    display: none;
+}
+
+
+.nav-items .nav-list{
+    display: flex;
+    list-style: none; 
+   
+}
+ .nav-list li{
+    margin-left: 20px;
+}
+.nav-list li>a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.nav-list li>a:hover{
+    color: #e4ae50;
+}
+.nav-list li:nth-of-type(4)>a{
+    border: 1px solid #e4ae50;
+    padding: 7px 20px;
+}
+
+header main{
+    display: flex;
+}
+header main .hero-left{
+    flex-basis: 50%;
+    padding: 5%;
+    position: relative;
+    background-image: url("https://media.istockphoto.com/photos/black-female-singer-singing-into-microphone-in-recording-studio-picture-id1284317705?b=1&k=20&m=1284317705&s=170667a&w=0&h=F7UoOb_dF4Jmsx2eYkWuehZn_EHvF6iYZtS260Cxn_o=");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+header main .hero-left::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:#001219;
+    opacity: .8;
+}
+header main .hero-right{
+    flex-basis: 50%;
+    background-image: url("https://media.istockphoto.com/photos/black-female-singer-singing-into-microphone-in-recording-studio-picture-id1284317705?b=1&k=20&m=1284317705&s=170667a&w=0&h=F7UoOb_dF4Jmsx2eYkWuehZn_EHvF6iYZtS260Cxn_o=");
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background-attachment: fixed;
+    height: 100vh;
+    background-position:  top center;
+}
+header main .hero-right img{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-left div{
+    position: relative;
+    top:35%;
+}
+.hero-left div h1{
+    font-size: 55px;
+    color: #e4ae50;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "montserrat";
+    margin-bottom: 20px;
+}
+.hero-left div h2{
+    font-size: 35px;
+    color: #e4ae50;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "montserrat";
+    margin-bottom: 20px;
+}
+.hero-left div p{
+    
+    color: #eee;
+    line-height: 2;
+    font-weight: 700;
+    font-family: "montserrat";
+    margin-bottom: 30px;
+}
+.hero-left div a{
+    
+    border: 1px solid #e4ae50;
+    color: #eee;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+
+}.hero-left div a:hover{
+    background-color: #e4ae50;
+    color: #000;
+}
+
+/* color yellow #e4ae50 */
+
+/* about section */
+.about-boom{
+   
+    /* background-color: #ded; */
+    /* color: #fff; */
+    padding: 50px 5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* background-color: #eee; */
+    
+    
+}
+.about-boom .abt-img{
+    flex-basis: 40%;
+    /* background-color: red; */
+    margin-right: 30px;
+ 
+}
+.about-boom .abt-img img{
+    min-width: 400px;
+    height: 500px;
+}
+.about-boom .abt-content{
+    flex-basis: 60%;
+    color: #e4ae50;
+    /* background-color: #e4ae50; */
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    
+}
+.about-boom .abt-content p{
+  
+    text-align: justify;
+    margin-top: 17px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    color: #222;
+    font-family: "Zen Kaku Gothic Antique";
+   
+}
+.about-boom .social-contact{
+    margin-top: 11px;
+}
+.about-boom .abt-content h2{
+    font-family: "Montserrat";
+    color: #222;
+
+}
+.about-boom .abt-content i{
+
+    font-size: 30px;
+    
+    margin-right: 0.5rem;
+    color: #e4ae50;
+}
+
+/* buy beats */
+#buy-beats{
+    height: auto;
+    background-image: url(images/beatbg1.jpg);
+   background-attachment: fixed;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+#buy-beats::after{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:black;
+    opacity: .5;
+    
+}
+#buy-beats h1{
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    font-size: 4rem;
+}
+.beats-container{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.beats-container ul{
+    list-style: none;
+    /* height: 5rem; */
+    position: relative;
+    width: 100%;
+}
+.beats-container ul li{
+    height: 7rem;
+    display: flex;
+    background-color: #222;
+    /* margin-bottom: 10px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    position: relative;
+
+}
+.beats-container ul li img{
+    height: 100%;
+    flex-basis: 15%;
+}
+.beats-container ul li audio{
+    flex-basis: 85%;
+    
+    
+}
+
+/* footer styling section */
+footer{
+    
+    padding: 3rem 7%;
+    background-color: #000;
+    color:#fff;
+
+}
+
+footer .upper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    border-bottom: #eee;
+}
+footer .upper-footer .first-upper-footer, 
+.second-upper-footer,
+ .third-upper-footer{
+     flex-basis: 30%;
+ }
+
+footer .upper-footer .first-upper-footer{
+    padding-bottom: 1.5rem;
+}
+footer .upper-footer .first-upper-footer div:nth-of-type(1){
+    margin-bottom: 20px;
+}
+footer .upper-footer .first-upper-footer div:nth-of-type(2) ul{
+    list-style: none;
+    
+}
+footer .upper-footer .first-upper-footer div:nth-of-type(2) ul a,li{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease-out;
+    /* width: 0; */
+}
+footer .upper-footer .first-upper-footer div:nth-of-type(2) ul li:hover{
+    transform: translateX(10px);
+    color:#e4ae50;
+}
+footer .upper-footer .first-upper-footer div:nth-of-type(2) ul a:hover{
+   
+    color:#e4ae50;
+}
+/* second upper footer styling */
+footer .upper-footer .second-upper-footer div:nth-of-type(1) img{
+    background-color:#fff;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: all .3s ease; 
+    
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(1) img:hover{
+    background-color: #e4ae50; 
+    padding-top: 1rem;
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(2) {
+    margin-top: 10px;
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(2) form{
+    display: flex;
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(2) form input{
+    border: none;
+    border: 1px solid #e4ae50;
+    outline: none;
+    padding-left: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(2) button{
+    background-color: #e4ae50;
+    border: 1px solid #e4ae50;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 3px;
+    font-size: 1rem;
+    color: #eee;
+    font-weight: bold;
+}
+footer .upper-footer .second-upper-footer div:nth-of-type(2) form input, button{
+    height: 50px;
+}
+/* third upper footer */
+footer .upper-footer .third-upper-footer >div {
+    margin-top: 10px;
+}
+footer .upper-footer .third-upper-footer >div div{
+    margin-top: 7px;
+}
+footer .upper-footer .third-upper-footer div img{
+    background-color: #fff;
+    transition: all .3s ease;
+}
+footer .upper-footer .third-upper-footer div img:hover{
+    background-color: #e4ae50;
+}
+/* lower footer styling section */
+ .lower-footer{
+     border-top: 1px solid #fff;
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem 0;
+    font-weight: 600;
+    /* word-spacing: 8px; */
+   
+ }
+
+
+
+
+/* responsiveness */
+@media (max-width:1250px) {
+    .hero .hero-left h2{
+        font-size: 3rem;
+          
+    }
+    .hero .hero-left h3{
+        font-size: 2rem;
+          
+    }
+
+  
+}
+@media (max-width:1080px) {
+    .hero .hero-left h2{
+        font-size: 2.5rem;
+          
+    }
+    .hero .hero-left h3{
+        font-size: 1.5rem;
+          
+    }
+    .hero .hero-right{
+        height: 70vh;
+    }
+
+  
+}
+@media (max-width:960px) {
+    
+    footer{
+    
+        padding: 3rem 4%;
+        background-color: #000;
+        color:#fff;
+    
+    }
+    footer .upper-footer .second-upper-footer div:nth-of-type(2) form input{
+       
+        padding-left: 5px;
+        font-size: .7rem;
+        
+       
+    }
+    footer .upper-footer .second-upper-footer div:nth-of-type(2) form input, button{
+        height: 40px;
+    }
+    footer .upper-footer .second-upper-footer div:nth-of-type(2) button{
+        
+        font-size: .7rem;
+        color: #eee;
+        font-weight: bold;
+    }
+   
+}
+@media (max-width:730px) {
+    /* body */
+    /* header{
+        overflow-x: hidden;
+    } */
+    /* navigation */
+
+    
+   
+    header .nav-items .nav-list{
+        /* display: none; */
+        /* background-color: #e4ae50; */
+        position: absolute;
+        right: 0;
+        height: 60vh;
+        top: 0vh;
+        background-color: #001219;
+        /* background-color: red; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        /* transform: translate(100%, -100%); */
+        transform: translate(100%,-100%);
+        
+        transition: all 0.5s ease-in;
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
+    header .nav-items .navigation-active{
+        transform: translate(0,0);
+        
+    }
+    
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translate(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+    header .nav-items .nav-list li{
+        opacity: 0;
+    }
+    header .nav-items .nav-list li:nth-of-type(1), li:nth-of-type(2),li:nth-of-type(3){
+       border-bottom: 1px solid #e4ae50;
+       width: 80%;
+       text-align: center;
+    }
+    header .nav-items .nav-list li:nth-of-type(4)> a{
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: #e4ae50;
+            font-size: 1.5rem;
+            transition: all .3s ease;
+
+
+    }
+    header .nav-items .nav-list li:nth-of-type(4)> a:hover{
+        background-color: #001219;
+    }
+    header .nav-items .hamburger{
+        background-color: #e4ae50;
+        display: block;
+        z-index: 1000;
+    }
+    header .nav-items .hamburger:active img{
+        transform: translateY(30px);
+        background-color: transparent;
+        
+    }
+    /* hamburger off */
+    header .nav-items .hamburger .off{
+        display: none;
+    }
+    .offed-on{
+        display: block !important;
+    }
+    .oned-off{
+        display: none ;
+    }
+    .hero-left div h1{
+        font-size: 45px;
+        
+    }
+    .hero-left div h2{
+        font-size: 30px;
+        
+    }
+    header main{
+        flex-direction: column;
+        
+    }
+    .hero-left div{
+        position: relative;
+        top:47vh;
+        left: 7%;
+     }
+   
+    
+    footer .upper-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+    /* footer */
+
+    .lower-footer{
+        width: 90%;
+        margin: auto;
+        font-weight: bold;
+      
+    }
+    footer .upper-footer .second-upper-footer div:nth-of-type(2) form input{
+       
+        width: 250px;
+        
+       
+    }
+    footer .upper-footer .third-upper-footer{
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width:600px) {
+    header main .hero-left::before{
+        
+        opacity: .5;
+    }
+    .hero-left div h1{
+        font-size: 40px;
+        
+    }
+    .hero-left div h2{
+        font-size: 26px;
+        
+    }
+    .hero-left div p{
+        /* font-family: 'Gwendolyn'; */
+       
+        width: 90%;
+        
+    }
+    .lower-footer p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hero-left div h1{
+        font-size: 35px;
+        
+    }
+    .hero-left div h2{
+        font-size: 25px;
+        
+    }
+
+}
+
+
+/* 023047 */
+
+
+
